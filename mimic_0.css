@@ -45,12 +45,36 @@
     height:100vh;
     width:100vw;
     background-color:orange;
+    display:flex;
+}
+#two_one{
+    background-color:aqua;
+    width:50vw;
+}
+#two_two{
+    background-color:black;
+    width:50vw;
 }
 
 #three{
     height:100vh;
     width:100vw;
     background-color:yellow;
+    display:flex;
+    flex-direction:column;
+}
+#three_skills{
+    margin:auto;
+    display:flex;
+    
+}
+.soft_skills_1{
+    width:25vw;;
+    height:25vw;
+    margin:20px;
+    background-color:purple;
+    justify-content: center;
+    align-items:center;
 }
 
 #four{
