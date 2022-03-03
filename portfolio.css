@@ -1,8 +1,7 @@
 *{
     margin:0px;
     padding:0px;
-    --font_0:Roboto;
-    --font_1:Lato;
+    
     
     
 }
@@ -34,7 +33,7 @@
 
 #one{
     height:100vh;
-    width:100vw;
+    width:20%;
     background-color:red;
     display:flex;
     justify-content: center;
@@ -58,7 +57,7 @@
 
 #three{
     height:100vh;
-    width:100vw;
+    width:20%;
     background-color:yellow;
     display:flex;
     flex-direction:column;
@@ -79,7 +78,7 @@
 
 #four{
     height:100vh;
-    width:100vw;
+    width:20%;
     background-color:green;
     display:flex;
     justify-content: center;
@@ -88,12 +87,28 @@
 
 #five{
     height:100vh;
-    width:100vw;
+    width:20%;
     background-color:blue;
+    display:flex;
+    flex-direction:column;
+}
+#five_skills{
+    margin:auto;
+    display:flex;
+    
 }
 
 #six{
     height:100vh;
     width:100vw;
     background-color:purple;
+    display:flex;
+}
+#six_one{
+    background-color:brown;
+    width:50vw;
+}
+#six_two{
+    background-color:black;
+    width:50vw;
 }
