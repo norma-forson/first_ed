@@ -189,6 +189,9 @@ margin:auto;
     text-align: center;
     padding:10% 0;
 }
+.contact_details a{
+    text-decoration: underline;
+}
 #six_two{
     background-color:#ffd7d7;
     width:50vw;
