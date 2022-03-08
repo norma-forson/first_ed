@@ -1,22 +1,43 @@
 *{
     margin:0px;
     padding:0px;
-    
-    
-    
+    font-family: 'Raleway', sans-serif; 
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+section{
+    width:100vw;
+}
+#one div h1{
+    font-size: 3rem;
+}
+.num{
+    height:5vh;
+    width:5vw;
+    color:white;
+    font-size: 3rem;
+    padding-top: 10vh;
 }
 #header{
     height:8vh;
     width:100vw;
-    position:fixed;
-    
+    position:fixed; 
+    /* background-color:#ffd7d7; */
+    background-color:rgba(255,215,215,0.6);
+    z-index:2;
+     
 }
 #header ul{
     height:100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.2);
+}
+#footer{
+    display:flex;
+    width:20vw;
 }
 #header ul a{
     margin:0px 10px;
@@ -24,91 +45,226 @@
 #header ul a li{
     list-style-type:none;
 }
-
+section{
+    width:100vw;
+}
 #main{
-    display:flex;
-    width:600%;
+    width:100vw;
     overflow-x:hidden;
 }
-
 #one{
     height:100vh;
-    width:20%;
-    background-color:red;
+    background-image: url("https://images.pexels.com/photos/4041268/pexels-photo-4041268.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size:cover;
+    background-repeat: no-repeat;
     display:flex;
     justify-content: center;
     align-items: center;
 }
-
 #two{
     height:100vh;
     width:100vw;
-    background-color:orange;
     display:flex;
+    background-color: #f3b6b6;
 }
 #two_one{
-    background-color:aqua;
+    background-color: #f3b6b6;
+    display:flex;
     width:50vw;
+}
+#two_one div{
+    width:60%;
+    height:50%;
+    margin: auto;
+    text-align:justify;
+}
+#two_one div h1{
+    padding: 15% 0;
 }
 #two_two{
-    background-color:black;
     width:50vw;
+    display:flex;
 }
-
 #three{
-    height:100vh;
-    width:20%;
-    background-color:yellow;
+    height:120vh;
+    background-color: #e0a2a2;
     display:flex;
     flex-direction:column;
 }
+#three_one{
+    height:30vh;
+    display:flex;
+}
+#three_header{
+margin:auto;
+}
 #three_skills{
     margin:auto;
-    display:flex;
-    
+    display:flex;  
 }
 .soft_skills_1{
+    color:white;
     width:25vw;;
     height:25vw;
     margin:20px;
-    background-color:purple;
+    background-color:#915858;
     justify-content: center;
     align-items:center;
+    display:flex;
+    z-index:0;
 }
-
+.soft_skills_1 h2{
+    margin:auto;
+    text-align:center;
+}
+.soft_skills_1 p{
+    font-size:70%;
+    text-align:center;
+    opacity:0%;
+    transition: 2s;
+}
+.soft_skills_1 p a{
+    color:rgb(157, 157, 206);
+    text-decoration:underline;
+}
+.soft_skills_1 p:hover{
+    opacity:100%;
+}
+#three_img_div{
+    width:inherit;
+    height:inherit;
+    position:absolute;
+    background-color:blue;
+    z-index:-2;
+}
+#three_img_div_2{
+    width:inherit;
+    height:inherit;
+    position:absolute;
+    background-color:rgba(0,0,0,0.5);
+    z-index:-1;
+}
+#three_img_div img{
+    width:inherit;
+    height:inherit;
+}
 #four{
     height:100vh;
-    width:20%;
-    background-color:green;
+    background-color:#c38888;
     display:flex;
     justify-content: center;
     align-items: center;
 }
-
+#four div{
+     width:70%;
+}
 #five{
-    height:100vh;
-    width:20%;
-    background-color:blue;
+    height:120vh;
+    background-color:#e0a2a2;
     display:flex;
     flex-direction:column;
 }
 #five_skills{
     margin:auto;
     display:flex;
+    height:90vh;
     
 }
 
+
 #six{
     height:100vh;
-    width:100vw;
-    background-color:purple;
     display:flex;
 }
 #six_one{
-    background-color:brown;
+    background-image: url("https://images.pexels.com/photos/4041271/pexels-photo-4041271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size:cover;
+    background-repeat: no-repeat;
     width:50vw;
 }
+#six_two_one{
+    padding:10% 0;
+    width:60%;
+    text-align:center;
+}
+.contact_details{
+    width:80%;
+    text-align: center;
+    padding:10% 0;
+}
 #six_two{
-    background-color:black;
+    background-color:#ffd7d7;
     width:50vw;
+}
+#six_two div {
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+}
+
+@media(max-width:500px){
+    #main{
+        width:100vw;
+        flex-direction:column;
+    }
+    header{
+        width:100vw;
+        position: fixed;
+    }
+    #header{
+        position:fixed;
+    }
+    #one{
+        text-align:center;
+    }
+    #two{
+        flex-direction:column;
+        
+    }
+    #two_one{
+        width:100%;
+        height:50%;
+    }
+    #two_two{
+        width:100%;
+        height:50%;
+    }
+    #three{
+        width:100vw;   
+    }
+    #three_skills{
+        flex-direction:column;
+    }
+    .soft_skills_1{
+        width:60vw;
+        height:60vw;
+    }
+    #four{
+        width:100vw;
+    }
+    #five{
+        width:100vw;
+        height:200vh;
+    }
+    #five_skills{
+        flex-direction:column;
+    }
+    #six{
+        flex-direction:column;
+    }
+    #six_one{
+        width:100%;
+        height:50%; 
+    }
+    #six_two{
+        width:100%;
+        height:70%;
+    }
+    #six_two div {
+        padding:10% 0;
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+    }
+    
 }
