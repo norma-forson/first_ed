@@ -120,16 +120,13 @@ margin:auto;
 .soft_skills_1 p{
     font-size:70%;
     text-align:center;
-    opacity:0%;
-    transition: 2s;
+   
 }
 .soft_skills_1 p a{
     color:rgb(157, 157, 206);
     text-decoration:underline;
 }
-.soft_skills_1 p:hover{
-    opacity:100%;
-}
+
 #three_img_div{
     width:inherit;
     height:inherit;
